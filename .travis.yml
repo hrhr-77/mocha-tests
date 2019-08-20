@@ -1,8 +1,10 @@
 language:
   node_js
 install:
-    - npm i
-    - npm i -g codecov
+  - npm i
+  - npm i -g codecov
+script:
+  - npm run test:coverage
 node_js:
   # - '4'
   - '6'
