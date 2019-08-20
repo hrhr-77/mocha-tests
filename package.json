@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "test:coverage": "nyc npm test"
+    "test:coverage": "nyc npm test",
+    "success": "cowsay 'gra gitara!'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cowsay": "^1.4.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1"
