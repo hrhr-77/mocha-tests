@@ -6,11 +6,13 @@
   "scripts": {
     "test": "mocha test",
     "test:coverage": "nyc npm test",
-    "success": "cowsay 'gra gitara!'"
+    "success": "cowsay 'gra gitara!'",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "codecov": "^3.5.0",
     "cowsay": "^1.4.0",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
